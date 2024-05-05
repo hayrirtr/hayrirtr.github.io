@@ -1,0 +1,254 @@
+html {
+    scroll-behavior: smooth
+}
+
+* {margin:0; padding:0; text-decoration:none;}
+
+
+body {
+	background: #fcf8ef;
+	overflow-x:hidden;
+}
+
+body::-webkit-scrollbar {
+isplay:none;
+position:absolute;
+width: 10px;
+background-color: #f2f2f2;
+}
+ 
+body::-webkit-scrollbar-track {
+width: 3px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+background-color: #ccc;
+width: 5px;
+}
+
+
+
+#blog {
+width:100vw;
+position:relative;
+padding: 5vh 0 1vh 0vw;
+order: 1px solid red;
+text-align:left;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden; /* fix for long non-text content breaking IE sidebar float */
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+letter-spacing: .01em;
+text-transform: none;
+line-height: 1.6em;
+opacity: 0;
+animation: hidey .5s forwards; /*my longest animation is 2.7s */
+animation-delay: .s;
+}
+
+@keyframes hidey {
+0%   {   } 
+100% { opacity:1;  }
+}
+
+#kapat {
+position:relative;
+width:30vw;
+margin:0 auto;
+margin-left: -4vw;
+padding-left: 0vw;
+animation-delay: ;
+animation: toright1 1s forwards;
+opacity:0;
+}
+
+@keyframes toright1 {
+0%    {   }
+62%   { opacity:0;   } 
+99%   { opacity:1; margin:0 auto;  } 
+100%  { opacity:1; margin:0 auto;  }
+}
+
+
+
+
+#kapat a {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+letter-spacing: .01em;
+text-transform: none;
+line-height: 1.6em;
+color:#000;
+}
+
+#blog h2 {
+width:30vw;
+margin:0 auto;
+color:#e60000;
+height:80px;
+ackground: url(../pics/crop.png)  no-repeat;
+ackground-size: 80px;
+margin-top:10vh;
+font-family: 'Barlow';
+font-size: 12px;
+font-style: normal;
+font-weight:400;
+margin-bottom: -70px;
+order: 1px solid red;
+}
+
+#blog h3 {
+font-family: 'Sanchez';
+font-size: 16px;
+font-style: normal;
+font-weight:400;
+margin-left:5px;
+}
+
+#blog p { 
+width:30vw;
+margin:0 auto;
+border-radius:5px;
+border-bottom:1px solid #ddd;
+font-size: 14px;
+line-height:1.7em;
+padding:1%;
+font-family: 'Inconsolata';
+font-style: normal;
+font-weight: 400;
+text-decoration: none;
+color:#000;
+padding-bottom:5vh;
+text-align:center;
+clear:both;
+margin-top:20px;
+height: 1%;
+background: white;
+}
+
+#blog p::first-letter { ont-size: 80px; }
+
+#blog img { 
+width:30vw; 
+margin-bottom:20px;
+border-radius:5px;
+}
+
+blockquote {
+margin: 5px 0px 5px 0px;
+padding: 25px 15px 25px 25px;
+color: white;
+background-color: black;
+border: 1px solid;
+border-color: #ffffff;
+font-family: 'Merriweather';
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height:1.6em;
+text-decoration: none;
+}
+
+iframe {  border-radius:5px; width:100%; argin-left:-20%; height:210px; margin-bottom:  10px;  }
+
+#sonra {
+margin:0 auto;
+margin-top:12vh;
+margin-bottom:6vh;
+width:34vw;
+background: #eee;
+text-align: center;
+padding-bottom:4vh;
+padding-top:4vh;
+border:1px solid #eee;
+border-radius: 10px;
+}
+
+#sonra p {
+margin-top:3vh;
+font-size: 14px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+color:#000;
+padding-bottom:20px;
+}
+
+#sonra a {
+argin-left :110px;
+position:relative;
+font-size: 24px;
+font-family: 'Merriweather';
+font-style: normal;
+font-weight: 400;
+text-align: center;
+color:#000;
+}
+
+#sonra a:hover  {
+color:#e60000;
+text-decoration:none;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  
+#blog {
+margin-top:0;
+width:100vw;
+position:relative;
+padding-top: 30vh;
+margin-left: 0vw;
+padding-left: 0vw;
+}
+
+#blog h3 {
+font-size: 12px;
+text-align:center;
+margin-left:0px;
+}
+
+#blog h2 {
+background:none;
+text-align:center;
+font-size: 12px;
+line-height:1.2em;
+width:70vw;
+margin:0 auto;
+order:1px solid red;
+padding-left: 0vw;
+margin-top:00px;
+padding-top:0;
+height:30px;
+}
+
+#blog p {
+font-family: 'Barlow';
+font-size: 12px;
+margin: 0 auto;
+width:80vw;
+margin-top:1vh;
+padding-bottom:50px;
+margin-bottom:100px;
+}
+
+#sonra {
+width:90vw;
+order:1px solid red;
+margin-left: 2.5vw;
+text-align: center;
+}
+
+#sonra p {
+font-size: 12px;
+}
+
+#sonra a {
+margin-left :0px;
+font-size: 20px;
+}
